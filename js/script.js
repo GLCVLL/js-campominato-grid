@@ -7,6 +7,15 @@ const generateGrid = () => {
       const cell = document.createElement('div');
       cell.className = 'cell';
       cell.innerText = i;
+
+    // Event listener for cell click
+    cell.addEventListener('click', () => {
+        cell.classList.toggle('active');
+        console.log(`Clicked cell ${i}`);
+    });
+      
+    gridContainer.appendChild(cell);
+    
     }
 };
 
@@ -17,4 +26,4 @@ const playButton = document.getElementById('play-button');
 
 
 // listen to the play button
-//playButton.addEventListener('click', generateGrid);//
+playButton.addEventListener('click', generateGrid);
