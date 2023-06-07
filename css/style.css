@@ -16,18 +16,22 @@ main{
     justify-content: center;
 }
 
-.my-grill{
+#my-grid{
     height: 500px;
     width: 500px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.my-grill .cell{
+#my-grid .cell{
     height: 50px;
     width: 50px;
     flex-basis: calc(100% / 10);
     border: 2px solid black;
+}
+
+.cell.active{
+    background-color: blue;
 }
 
 footer{
