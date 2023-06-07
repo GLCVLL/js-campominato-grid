@@ -28,6 +28,9 @@ main{
     width: 50px;
     flex-basis: calc(100% / 10);
     border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell.active{
