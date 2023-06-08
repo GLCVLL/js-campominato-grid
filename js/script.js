@@ -3,6 +3,10 @@ console.log('JS OK');
 // Function to generate the game grid
 const generateGrid = () => {
 
+  playButton.innerText = 'Rigioca';
+
+  gridContainer.innerHTML = '';
+
     for (let i = 1; i <= 100; i++) {
       const cell = document.createElement('div');
       cell.className = 'cell';
@@ -15,7 +19,7 @@ const generateGrid = () => {
     });
       
     gridContainer.appendChild(cell);
-    
+
     }
 };
 
