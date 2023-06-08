@@ -7,20 +7,20 @@ const generateGrid = () => {
 
   gridContainer.innerHTML = '';
 
-    for (let i = 1; i <= 100; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'cell';
-      cell.innerText = i;
+  for (let i = 1; i <= 100; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.innerText = i;
 
-    // Event listener for cell click
-    cell.addEventListener('click', () => {
-        cell.classList.toggle('active');
-        console.log(`Clicked cell ${i}`);
-    });
-      
-    gridContainer.appendChild(cell);
+  // Event listener for cell click
+  cell.addEventListener('click', () => {
+      cell.classList.toggle('active');
+      console.log(`Clicked cell ${i}`);
+  });
+    
+  gridContainer.appendChild(cell);
 
-    }
+  }
 };
 
 // all the elements from the DOM
